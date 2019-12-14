@@ -53,7 +53,7 @@ header {
 
 #accueil {
     margin-top: 5em;
-    height: 15em;
+    min-height: 15em;
     display: flex;
     justify-content: center;
     max-width: 100%;
@@ -79,7 +79,7 @@ header {
             background-color: rgb(19, 19, 129);
             border: none;
             border-radius: 5px;
-            height: 3em;
+            min-height: 3em;
         }
 
         a {
@@ -105,9 +105,10 @@ header {
     padding: 10px;
     background-color: rgb(19, 19, 129);
     color: white;
-    height: 15em;
+    min-height: 15em;
     width: 96%;
     border-radius: 5px;
+    margin-top: 1em;
 
     p{
         font-weight: bold;
@@ -116,45 +117,80 @@ header {
 }
 
 #competences {
+    display: flex;
+    flex-direction: column;
     width: 96%;
     margin: auto;
     margin-top: 1em;
     border-radius: 5px;
     padding: 10px;
-    height: 15em;
+    min-height: 15em;
     background-color: rgb(233, 229, 229);
     margin-bottom: 1em;
     color: rgb(19, 19, 129);
 
-    img {
-        max-height: 80%;
+    #container-logo {
+        align-self: center;
     }
 }
 
-/* @media screen and (max-width: 650px) {
-    header {
-        flex-direction: column;
-        justify-content: flex-start;
+#portfolio {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(19, 19, 129);
+    color: white;
+    min-height: 15em;
+    width: 96%;
+    border-radius: 5px;
+
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 96%;
+    margin: auto;
+    margin-top: 1em;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 15em;
+    background-color: rgb(233, 229, 229);
+    margin-bottom: 1em;
+    color: rgb(19, 19, 129);
+
+    #contact-infos {
+        display: inline-flex;
         align-items: center;
+
+        img {
+            padding-left: 15px;
+        }
+        img:first-child {
+            padding: 0;
+        }
+    }
+
+}
+
+#icons8 {
+        position: relative;
+        bottom: 0;
+}
+
+@media screen and (max-width: 650px){
+
+    body {
+        max-width: 100%;
     }
 
     #nav-bar {
-        display: inline-flex;
-        margin: 0 !important;
-        align-items: baseline;
+     display: none;
     }
 
-    ul {
-        font-size: 1.5em !important;
-        padding: 0;
+    #apropos, #competences, #portfolio, #contact {
+        min-width: 100% !important;
     }
 
-    li {
-        margin-right: 0.5em !important;
-    }
-
-    li:last-child {
-        margin-right: 0 !important;
-    }
-
-} */
+   
+}

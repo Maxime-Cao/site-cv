@@ -61,7 +61,7 @@ header #nav-bar a:hover {
 
 #accueil {
   margin-top: 5em;
-  height: 15em;
+  min-height: 15em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +97,7 @@ header #nav-bar a:hover {
   background-color: #131381;
   border: none;
   border-radius: 5px;
-  height: 3em;
+  min-height: 3em;
 }
 
 #accueil #my_picture a {
@@ -120,9 +120,10 @@ header #nav-bar a:hover {
   padding: 10px;
   background-color: #131381;
   color: white;
-  height: 15em;
+  min-height: 15em;
   width: 96%;
   border-radius: 5px;
+  margin-top: 1em;
 }
 
 #apropos p {
@@ -131,46 +132,93 @@ header #nav-bar a:hover {
 }
 
 #competences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 96%;
   margin: auto;
   margin-top: 1em;
   border-radius: 5px;
   padding: 10px;
-  height: 15em;
+  min-height: 15em;
   background-color: #e9e5e5;
   margin-bottom: 1em;
   color: #131381;
 }
 
-#competences img {
-  max-height: 80%;
+#competences #container-logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
-/* @media screen and (max-width: 650px) {
-    header {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
+#portfolio {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #131381;
+  color: white;
+  min-height: 15em;
+  width: 96%;
+  border-radius: 5px;
+}
 
-    #nav-bar {
-        display: inline-flex;
-        margin: 0 !important;
-        align-items: baseline;
-    }
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 96%;
+  margin: auto;
+  margin-top: 1em;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: 15em;
+  background-color: #e9e5e5;
+  margin-bottom: 1em;
+  color: #131381;
+}
 
-    ul {
-        font-size: 1.5em !important;
-        padding: 0;
-    }
+#contact #contact-infos {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
-    li {
-        margin-right: 0.5em !important;
-    }
+#contact #contact-infos img {
+  padding-left: 15px;
+}
 
-    li:last-child {
-        margin-right: 0 !important;
-    }
+#contact #contact-infos img:first-child {
+  padding: 0;
+}
 
-} */
+#icons8 {
+  position: relative;
+  bottom: 0;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    max-width: 100%;
+  }
+  #nav-bar {
+    display: none;
+  }
+  #apropos, #competences, #portfolio, #contact {
+    min-width: 100% !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
