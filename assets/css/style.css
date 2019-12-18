@@ -1,8 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: sans-serif;
   width: 100%;
 }
@@ -16,17 +14,27 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 4em;
   width: 100%;
   background-color: #131381;
   position: fixed;
   top: 0;
+}
+
+header h1 {
+  margin-left: 1em;
+  text-transform: uppercase;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: white;
 }
 
 header #nav-bar {
@@ -46,7 +54,6 @@ header #nav-bar li {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-right: 1em;
-  border: none;
   text-transform: uppercase;
 }
 
@@ -60,70 +67,85 @@ header #nav-bar a:hover {
 }
 
 #accueil {
-  margin-top: 5em;
-  min-height: 15em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5em;
+  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 100%;
+  margin-bottom: 3em;
 }
 
-#accueil #my_picture {
+#accueil #nameandavatar {
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#accueil #nameandavatar #avatar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: 50%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#accueil #my_picture img {
-  height: 90%;
-  border-radius: 10px;
+#accueil #nameandavatar #avatar img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
-#accueil #my_picture #my_name {
-  margin-left: 2em;
+#accueil #nameandavatar #my_name {
+  text-align: center;
   font-size: 2em;
   line-height: 1.4em;
 }
 
-#accueil #my_picture p {
+#accueil #nameandavatar p {
   font-weight: bold;
 }
 
-#accueil #my_picture button {
+#accueil #nameandavatar button {
   background-color: #131381;
   border: none;
   border-radius: 5px;
   min-height: 3em;
 }
 
-#accueil #my_picture a {
+#accueil #nameandavatar a {
   text-decoration: none;
   color: white;
   font-size: 2em;
 }
 
-#accueil #my_picture button:hover {
+#accueil #nameandavatar button:hover {
   background-color: white;
   border: 2px solid #131381;
 }
 
-#accueil #my_picture button:hover a {
+#accueil #nameandavatar button:hover a {
   color: #131381;
 }
 
 #apropos {
-  margin: 0 auto;
-  padding: 10px;
+  padding: 96px;
   background-color: #131381;
   color: white;
   min-height: 15em;
-  width: 96%;
-  border-radius: 5px;
-  margin-top: 1em;
 }
 
 #apropos p {
@@ -139,14 +161,9 @@ header #nav-bar a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 96%;
-  margin: auto;
-  margin-top: 1em;
-  border-radius: 5px;
-  padding: 10px;
+  padding: 96px;
   min-height: 15em;
   background-color: #e9e5e5;
-  margin-bottom: 1em;
   color: #131381;
 }
 
@@ -156,14 +173,16 @@ header #nav-bar a:hover {
       align-self: center;
 }
 
+#competences #container-logo img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 #portfolio {
-  margin: 0 auto;
-  padding: 10px;
+  padding: 96px;
   background-color: #131381;
   color: white;
   min-height: 15em;
-  width: 96%;
-  border-radius: 5px;
 }
 
 #contact {
@@ -177,32 +196,24 @@ header #nav-bar a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 96%;
-  margin: auto;
-  margin-top: 1em;
-  border-radius: 5px;
-  padding: 10px;
+  padding: 96px;
   min-height: 15em;
   background-color: #e9e5e5;
-  margin-bottom: 1em;
   color: #131381;
 }
 
 #contact #contact-infos {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#contact #contact-infos img {
-  padding-left: 15px;
-}
-
-#contact #contact-infos img:first-child {
-  padding: 0;
+  line-height: 3em;
 }
 
 #icons8 {
@@ -212,16 +223,13 @@ header #nav-bar a:hover {
 
 @media screen and (max-width: 650px) {
   body {
-    width: 100%;
+    max-width: 100%;
   }
   header {
     width: 100%;
   }
   #nav-bar {
     display: none;
-  }
-  #apropos, #competences, #portfolio, #contact {
-    min-width: 100% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

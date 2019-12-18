@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
     width: 100%;
 
@@ -13,14 +12,23 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
     height: 4em;
     width: 100%;
     background-color: rgb(19, 19, 129);
     position: fixed;
     top: 0;
 
+    h1 {
+        margin-left: 1em;
+        text-transform: uppercase;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
 
     #nav-bar {
         max-height: 100%;
@@ -36,7 +44,6 @@ header {
         li {
             display: inline-flex;
             margin-right: 1em;
-            border: none;
             text-transform: uppercase;
         }
 
@@ -45,36 +52,48 @@ header {
             text-decoration: none;
         }
 
-        a:hover{
+        a:hover {
             color: rgb(35, 35, 211);
         }
     }
 }
 
 #accueil {
-    margin-top: 5em;
-    min-height: 15em;
     display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    height: 100vh;
     justify-content: center;
+    align-items: center;
     max-width: 100%;
+    margin-bottom: 3em;
 
-    #my_picture {
-        display: flex;
+    #nameandavatar {
         height: 100%;
-        img {
-            height: 90%;
-            border-radius: 10px;
+        justify-content: center;
+
+        #avatar {
+            display: flex;
+            height: 50%;
+            width: 100%;
+            justify-content: center;
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
+            }
         }
 
         #my_name {
-            margin-left: 2em;
+            text-align: center;
             font-size: 2em;
             line-height: 1.4em;
         }
-        p{
+
+        p {
             font-weight: bold;
         }
-        
+
         button {
             background-color: rgb(19, 19, 129);
             border: none;
@@ -89,10 +108,11 @@ header {
         }
 
         button:hover {
-            
+
             a {
                 color: rgb(19, 19, 129);
             }
+
             background-color: white;
             border: 2px solid rgb(19, 19, 129);
 
@@ -101,16 +121,12 @@ header {
 }
 
 #apropos {
-    margin: 0 auto;
-    padding: 10px;
+    padding: 96px;
     background-color: rgb(19, 19, 129);
     color: white;
     min-height: 15em;
-    width: 96%;
-    border-radius: 5px;
-    margin-top: 1em;
 
-    p{
+    p {
         font-weight: bold;
         text-align: justify;
     }
@@ -119,69 +135,54 @@ header {
 #competences {
     display: flex;
     flex-direction: column;
-    width: 96%;
-    margin: auto;
-    margin-top: 1em;
-    border-radius: 5px;
-    padding: 10px;
+    padding: 96px;
     min-height: 15em;
     background-color: rgb(233, 229, 229);
-    margin-bottom: 1em;
     color: rgb(19, 19, 129);
 
     #container-logo {
         align-self: center;
+
+        img:hover {
+            transform: scale(1.2);
+        }
     }
 }
 
 #portfolio {
-    margin: 0 auto;
-    padding: 10px;
+    padding: 96px;
     background-color: rgb(19, 19, 129);
     color: white;
     min-height: 15em;
-    width: 96%;
-    border-radius: 5px;
-
 }
 
 #contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 96%;
-    margin: auto;
-    margin-top: 1em;
-    border-radius: 5px;
-    padding: 10px;
+    padding: 96px;
     min-height: 15em;
     background-color: rgb(233, 229, 229);
-    margin-bottom: 1em;
     color: rgb(19, 19, 129);
 
     #contact-infos {
-        display: inline-flex;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-
-        img {
-            padding-left: 15px;
-        }
-        img:first-child {
-            padding: 0;
-        }
+        line-height: 3em;
     }
 
 }
 
 #icons8 {
-        position: relative;
-        bottom: 0;
+    position: relative;
+    bottom: 0;
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
 
     body {
-        width: 100%;
+        max-width: 100%;
     }
 
     header {
@@ -189,12 +190,11 @@ header {
     }
 
     #nav-bar {
-     display: none;
+        display: none;
     }
 
-    #apropos, #competences, #portfolio, #contact {
-        min-width: 100% !important;
-    }
 
-   
+
+
+
 }
