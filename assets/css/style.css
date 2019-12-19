@@ -133,7 +133,7 @@ header #nav-bar a:hover {
   display: -ms-flexbox;
   display: flex;
   height: 50%;
-  width: 100%;
+  max-width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
