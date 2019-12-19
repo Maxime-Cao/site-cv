@@ -258,7 +258,7 @@ header #nav-bar a:hover {
   line-height: 3em;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 930px) {
   body {
     max-width: 100% !important;
   }
