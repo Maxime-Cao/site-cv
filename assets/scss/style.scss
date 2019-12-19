@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,6 +11,36 @@ body {
     h2 {
         text-align: center;
         font-size: 2em;
+    }
+
+    .active {
+        color: rgb(35, 35, 211) !important;
+    }
+
+    #button {
+        position: fixed;
+        right: 10px;
+        top: 80%;
+        height: 25px;
+        width: 30px;
+        padding: 5px;
+        padding-right: 0;
+        border-radius: 50%;
+        background-color: rgb(19, 19, 129);
+    }
+
+    #img-button {
+        filter: invert(100%);
+    }
+
+    #button:hover {
+        background-color: black;
+        filter: invert(100%);
+    }
+
+    #icons8 {
+        position: relative;
+        bottom: 0;
     }
 }
 
@@ -65,7 +99,7 @@ header {
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 
     #nameandavatar {
         height: 100%;
@@ -141,6 +175,9 @@ header {
 
     #container-logo {
         align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
         img:hover {
             transform: scale(1.2);
@@ -173,27 +210,34 @@ header {
 
 }
 
-#icons8 {
-    position: relative;
-    bottom: 0;
-}
-
 @media screen and (max-width: 650px) {
 
     body {
-        max-width: 100%;
-    }
-
-    header {
-        width: 100%;
+        max-width: 100% !important;
     }
 
     #nav-bar {
         display: none;
     }
 
+    #avatar {
+        height: 40% !important;
+    }
 
+    section {
+        padding: 50px !important;
+    }
 
+    header {
+        justify-content: center;
 
+        h1 {
+            margin-left: 0;
+        }
+
+        .active {
+            color: white !important;
+        }
+    }
 
 }

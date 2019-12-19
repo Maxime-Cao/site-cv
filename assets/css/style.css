@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,6 +12,38 @@ body {
 body h2 {
   text-align: center;
   font-size: 2em;
+}
+
+body .active {
+  color: #2323d3 !important;
+}
+
+body #button {
+  position: fixed;
+  right: 10px;
+  top: 80%;
+  height: 25px;
+  width: 30px;
+  padding: 5px;
+  padding-right: 0;
+  border-radius: 50%;
+  background-color: #131381;
+}
+
+body #img-button {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+body #button:hover {
+  background-color: black;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+body #icons8 {
+  position: relative;
+  bottom: 0;
 }
 
 header {
@@ -82,7 +118,7 @@ header #nav-bar a:hover {
       -ms-flex-align: center;
           align-items: center;
   max-width: 100%;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 
 #accueil #nameandavatar {
@@ -168,8 +204,15 @@ header #nav-bar a:hover {
 
 #competences #container-logo {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #competences #container-logo img:hover {
@@ -215,20 +258,29 @@ header #nav-bar a:hover {
   line-height: 3em;
 }
 
-#icons8 {
-  position: relative;
-  bottom: 0;
-}
-
 @media screen and (max-width: 650px) {
   body {
-    max-width: 100%;
-  }
-  header {
-    width: 100%;
+    max-width: 100% !important;
   }
   #nav-bar {
     display: none;
+  }
+  #avatar {
+    height: 40% !important;
+  }
+  section {
+    padding: 50px !important;
+  }
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header h1 {
+    margin-left: 0;
+  }
+  header .active {
+    color: white !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
