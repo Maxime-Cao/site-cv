@@ -41,11 +41,6 @@ body #button:hover {
           filter: invert(100%);
 }
 
-body #icons8 {
-  position: relative;
-  bottom: 0;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,6 +251,28 @@ header #nav-bar a:hover {
       -ms-flex-align: center;
           align-items: center;
   line-height: 3em;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  background-color: #131381;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #2323d3;
 }
 
 @media screen and (max-width: 930px) {

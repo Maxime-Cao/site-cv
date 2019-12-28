@@ -37,11 +37,6 @@ body {
         background-color: black;
         filter: invert(100%);
     }
-
-    #icons8 {
-        position: relative;
-        bottom: 0;
-    }
 }
 
 header {
@@ -208,6 +203,24 @@ header {
         line-height: 3em;
     }
 
+}
+
+footer {
+    display: flex;
+    padding: 5px;
+    background-color: rgb(19, 19, 129);
+    justify-content: space-between;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: rgb(35, 35, 211);
+    }
 }
 
 @media screen and (max-width: 930px) {
