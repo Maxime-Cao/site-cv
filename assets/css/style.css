@@ -15,7 +15,7 @@ body h2 {
 }
 
 body .active {
-  color: #2323d3 !important;
+  color: #9292dd !important;
 }
 
 body #button {
@@ -93,7 +93,7 @@ header #nav-bar a {
 }
 
 header #nav-bar a:hover {
-  color: #2323d3;
+  color: #9292dd !important;
 }
 
 #accueil {
@@ -272,7 +272,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #2323d3;
+  color: #9292dd !important;
 }
 
 @media screen and (max-width: 930px) {
