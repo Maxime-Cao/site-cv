@@ -157,6 +157,19 @@ header {
     p {
         font-weight: bold;
         text-align: justify;
+
+        #becode {
+            a {
+                color: rgb(146, 146, 221);
+                text-decoration: none;
+            }
+        }
+
+        #stage {
+            color: rgb(146, 146, 221);
+            font-weight: bolder;
+        }
+
     }
 }
 

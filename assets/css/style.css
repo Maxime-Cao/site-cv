@@ -183,6 +183,16 @@ header #nav-bar a:hover {
   text-align: justify;
 }
 
+#apropos p #becode a {
+  color: #9292dd;
+  text-decoration: none;
+}
+
+#apropos p #stage {
+  color: #9292dd;
+  font-weight: bolder;
+}
+
 #competences {
   display: -webkit-box;
   display: -ms-flexbox;
