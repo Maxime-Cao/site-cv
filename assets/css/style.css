@@ -222,6 +222,11 @@ header #nav-bar a:hover {
   min-height: 15em;
 }
 
+#portfolio p {
+  font-weight: bold;
+  text-align: center;
+}
+
 #contact {
   display: -webkit-box;
   display: -ms-flexbox;

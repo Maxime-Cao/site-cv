@@ -185,6 +185,11 @@ header {
     background-color: rgb(19, 19, 129);
     color: white;
     min-height: 15em;
+
+    p {
+        font-weight: bold;
+        text-align: center;
+    }
 }
 
 #contact {
