@@ -258,6 +258,8 @@ header #nav-bar a:hover {
 #portfolio #container-card .card .img-card {
   width: 50%;
   height: 100%;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 #contact {
