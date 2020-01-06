@@ -262,6 +262,10 @@ header #nav-bar a:hover {
   border: 1px solid black;
 }
 
+#portfolio #container-card .card .img-card:hover {
+  opacity: 0.8;
+}
+
 #contact {
   display: -webkit-box;
   display: -ms-flexbox;
