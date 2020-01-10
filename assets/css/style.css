@@ -27,7 +27,8 @@ body #button {
   padding: 5px;
   padding-right: 0;
   border-radius: 50%;
-  background-color: #131381;
+  background: -webkit-gradient(linear, left top, right top, from(#282d99), color-stop(72%, #000a6e));
+  background: linear-gradient(90deg, #282d99 0%, #000a6e 72%);
 }
 
 body #img-button {
@@ -36,9 +37,13 @@ body #img-button {
 }
 
 body #button:hover {
-  background-color: black;
+  background: black;
   -webkit-filter: invert(100%);
           filter: invert(100%);
+}
+
+body #navname {
+  color: white !important;
 }
 
 header {
@@ -53,7 +58,8 @@ header {
           justify-content: space-between;
   height: 4em;
   width: 100%;
-  background-color: #131381;
+  background: -webkit-gradient(linear, left top, right top, from(#282d99), color-stop(72%, #000a6e));
+  background: linear-gradient(90deg, #282d99 0%, #000a6e 72%);
   position: fixed;
   top: 0;
   z-index: 999;
@@ -94,7 +100,7 @@ header #nav-bar a {
 }
 
 header #nav-bar a:hover {
-  color: #9292dd !important;
+  color: #a1a1e4 !important;
 }
 
 #accueil {
@@ -151,7 +157,8 @@ header #nav-bar a:hover {
 }
 
 #accueil #nameandavatar button {
-  background-color: #131381;
+  background: -webkit-gradient(linear, left top, right top, from(#282d99), color-stop(72%, #000a6e));
+  background: linear-gradient(90deg, #282d99 0%, #000a6e 72%);
   border: none;
   border-radius: 5px;
   min-height: 3em;
@@ -164,7 +171,7 @@ header #nav-bar a:hover {
 }
 
 #accueil #nameandavatar button:hover {
-  background-color: white;
+  background: white;
   border: 2px solid #131381;
 }
 
@@ -174,7 +181,8 @@ header #nav-bar a:hover {
 
 #apropos {
   padding: 96px;
-  background-color: #131381;
+  background: -webkit-gradient(linear, left top, right top, from(#282d99), color-stop(72%, #000a6e));
+  background: linear-gradient(90deg, #282d99 0%, #000a6e 72%);
   color: white;
   min-height: 15em;
 }
@@ -185,12 +193,12 @@ header #nav-bar a:hover {
 }
 
 #apropos p #becode a {
-  color: #9292dd;
+  color: #a1a1e4;
   text-decoration: none;
 }
 
 #apropos p #stage {
-  color: #9292dd;
+  color: #a1a1e4;
   font-weight: bolder;
 }
 
@@ -228,7 +236,8 @@ header #nav-bar a:hover {
 
 #portfolio {
   padding: 96px;
-  background-color: #131381;
+  background: -webkit-gradient(linear, left top, right top, from(#282d99), color-stop(72%, #000a6e));
+  background: linear-gradient(90deg, #282d99 0%, #000a6e 72%);
   color: white;
   min-height: 15em;
   display: -webkit-box;
@@ -260,7 +269,7 @@ header #nav-bar a:hover {
   width: 50%;
   height: 100%;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid #131381;
 }
 
 #portfolio #container-card .card .img-card:hover {
@@ -308,7 +317,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   padding: 5px;
-  background-color: #131381;
+  background: -webkit-gradient(linear, left top, right top, from(#282d99), color-stop(72%, #000a6e));
+  background: linear-gradient(90deg, #282d99 0%, #000a6e 72%);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
