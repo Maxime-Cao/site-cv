@@ -25,6 +25,11 @@ body .active {
 }
 
 body #button {
+  opacity: 0;
+  -webkit-transition: ease-in;
+  transition: ease-in;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   position: fixed;
   right: 10px;
   top: 80%;

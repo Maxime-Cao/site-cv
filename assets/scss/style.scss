@@ -24,6 +24,9 @@ body {
     }
 
     #button {
+        opacity: 0;
+        transition: ease-in;
+        transition-duration: 1s;
         position: fixed;
         right: 10px;
         top: 80%;

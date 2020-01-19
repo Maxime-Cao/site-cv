@@ -16,6 +16,14 @@
         var portfolio = document.querySelector("#portfolio").offsetTop;
 
         for (i in sections) {
+
+            if (scrollPosition > heightHeader) {
+                document.querySelector("#button").style.opacity = "1";
+            }
+
+            if (scrollPosition == heightHeader) {
+                document.querySelector("#button").style.opacity = "0";
+            }
             if (sections[i] <= scrollPosition) {
                 document.querySelector('.active').setAttribute('class', ' ');
                 document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
