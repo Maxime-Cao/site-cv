@@ -13,6 +13,12 @@ body {
         font-size: 2em;
     }
 
+    h3 {
+        font-weight: bold;
+        color: rgb(146, 146, 221) !important;
+        font-style: italic;
+    }
+
     .active {
         color: rgb(146, 146, 221) !important;
     }
@@ -171,7 +177,7 @@ header {
         }
 
         #stage {
-            color: rgb(161, 161, 228);
+            color: rgb(161, 161, 228) !important;
             font-weight: bolder;
         }
 
