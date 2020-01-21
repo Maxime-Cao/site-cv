@@ -24,6 +24,7 @@
             if (scrollPosition == heightHeader) {
                 document.querySelector("#button").style.opacity = "0";
             }
+
             if (sections[i] <= scrollPosition) {
                 document.querySelector('.active').setAttribute('class', ' ');
                 document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
