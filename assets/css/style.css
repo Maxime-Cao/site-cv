@@ -67,6 +67,7 @@ body #overlay {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2em;
+  color: white;
 }
 
 header {
@@ -134,7 +135,7 @@ header #nav-bar a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 5em;
+  margin-top: 4.1em;
   height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -146,40 +147,30 @@ header #nav-bar a:hover {
   margin-bottom: 1em;
 }
 
-#accueil #nameandavatar {
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#accueil #me {
+  color: #131381;
+  font-size: 5em;
 }
 
-#accueil #nameandavatar #avatar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50%;
-  max-width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#accueil #me2 {
+  font-size: 3em;
 }
 
-#accueil #nameandavatar #avatar img {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-#accueil #nameandavatar #my_name {
+#accueil #my_name {
   text-align: center;
-  font-size: 2em;
-  line-height: 1.4em;
+  line-height: 3.5em;
 }
 
-#accueil #nameandavatar p {
+#accueil #my_name #follow-me img:hover {
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
+}
+
+#accueil p {
   font-weight: bold;
 }
 
-#accueil #nameandavatar button {
+#accueil #button-cv {
   background: -webkit-gradient(linear, left top, right top, from(#282d99), color-stop(72%, #000a6e));
   background: linear-gradient(90deg, #282d99 0%, #000a6e 72%);
   border: none;
@@ -187,18 +178,18 @@ header #nav-bar a:hover {
   min-height: 3em;
 }
 
-#accueil #nameandavatar a {
+#accueil a {
   text-decoration: none;
   color: white;
   font-size: 2em;
 }
 
-#accueil #nameandavatar button:hover {
+#accueil #button-cv:hover {
   background: white;
   border: 2px solid #131381;
 }
 
-#accueil #nameandavatar button:hover a {
+#accueil #button-cv:hover a {
   color: #131381;
 }
 
@@ -344,9 +335,9 @@ footer {
   padding: 5px;
   background: -webkit-gradient(linear, left top, right top, from(#282d99), color-stop(72%, #000a6e));
   background: linear-gradient(90deg, #282d99 0%, #000a6e 72%);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer a {
@@ -370,9 +361,6 @@ footer a:hover {
   #accueil {
     margin-bottom: 0;
   }
-  #avatar {
-    height: 40% !important;
-  }
   section {
     padding: 50px !important;
   }
@@ -393,6 +381,15 @@ footer a:hover {
   }
   #overlay {
     font-size: 1em !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #me {
+    font-size: 2.5em !important;
+  }
+  #me2 {
+    font-size: 2em !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
