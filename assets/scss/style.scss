@@ -62,6 +62,17 @@ body {
         font-size: 2em;
         color: white;
     }
+
+    .reveal {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .reveal-visible {
+        opacity: 1;
+        transform: translateY(0);
+        transition: 1.5s cubic-bezier(.5, 0, 0, 1);
+    }
 }
 
 @keyframes test2 {
@@ -86,7 +97,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 999;
-    animation: test2 4s;
+    animation: test2 3s;
 
     h1 {
         margin-left: 1em;

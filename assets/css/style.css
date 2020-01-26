@@ -70,6 +70,20 @@ body #overlay {
   color: white;
 }
 
+body .reveal {
+  opacity: 0;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+body .reveal-visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 1.5s cubic-bezier(0.5, 0, 0, 1);
+  transition: 1.5s cubic-bezier(0.5, 0, 0, 1);
+}
+
 @-webkit-keyframes test2 {
   0% {
     -webkit-transform: translateY(-1000px);
@@ -113,8 +127,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  -webkit-animation: test2 4s;
-          animation: test2 4s;
+  -webkit-animation: test2 3s;
+          animation: test2 3s;
 }
 
 header h1 {
