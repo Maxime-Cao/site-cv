@@ -84,7 +84,7 @@ body .reveal-visible {
   transition: 1.5s cubic-bezier(0.5, 0, 0, 1);
 }
 
-@-webkit-keyframes test2 {
+@-webkit-keyframes moveHeader {
   0% {
     -webkit-transform: translateY(-1000px);
             transform: translateY(-1000px);
@@ -97,7 +97,7 @@ body .reveal-visible {
   }
 }
 
-@keyframes test2 {
+@keyframes moveHeader {
   0% {
     -webkit-transform: translateY(-1000px);
             transform: translateY(-1000px);
@@ -127,8 +127,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
-  -webkit-animation: test2 3s;
-          animation: test2 3s;
+  -webkit-animation: moveHeader 3s;
+          animation: moveHeader 3s;
 }
 
 header h1 {
@@ -198,7 +198,7 @@ header #nav-bar a:hover {
   font-size: 3em;
 }
 
-@-webkit-keyframes test {
+@-webkit-keyframes moveMyName {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-1000px);
@@ -211,7 +211,7 @@ header #nav-bar a:hover {
   }
 }
 
-@keyframes test {
+@keyframes moveMyName {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-1000px);
@@ -227,8 +227,8 @@ header #nav-bar a:hover {
 #accueil #my_name {
   text-align: center;
   line-height: 3.5em;
-  -webkit-animation-name: test;
-          animation-name: test;
+  -webkit-animation-name: moveMyName;
+          animation-name: moveMyName;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
@@ -400,29 +400,23 @@ header #nav-bar a:hover {
   text-decoration: none;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#282d99), color-stop(72%, #000a6e));
-  background: linear-gradient(90deg, #282d99 0%, #000a6e 72%);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
+/* footer {
+    display: flex;
+    padding: 5px;
+    background: linear-gradient(90deg, rgba(40, 45, 153, 1) 0%, rgba(0, 10, 110, 1) 72%);
+    justify-content: center;
 
-footer a {
-  color: white;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: bold;
-}
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
 
-footer a:hover {
-  color: #a1a1e4 !important;
-}
-
+    a:hover {
+        color: rgb(161, 161, 228) !important;
+    }
+} */
 @media screen and (max-width: 1050px) {
   body {
     max-width: 100% !important;
