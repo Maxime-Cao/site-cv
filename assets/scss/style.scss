@@ -119,6 +119,7 @@ header {
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    margin-bottom: 1em;
 
     #nameandavatar {
         height: 100%;
@@ -202,7 +203,7 @@ header {
     flex-direction: column;
     padding: 96px;
     min-height: 15em;
-    background-color: rgb(233, 229, 229);
+    background-color: white;
     color: rgb(19, 19, 129);
 
     #container-logo {
@@ -263,7 +264,7 @@ header {
     align-items: center;
     padding: 96px;
     min-height: 15em;
-    background-color: rgb(233, 229, 229);
+    background-color: white;
     color: rgb(19, 19, 129);
 
     #contact-infos {
@@ -308,6 +309,10 @@ footer {
         display: none;
     }
 
+    #accueil {
+        margin-bottom: 0;
+    }
+
     #avatar {
         height: 40% !important;
     }
@@ -331,6 +336,10 @@ footer {
     .img-card {
         width: 90% !important;
         height: 100%;
+    }
+
+    #overlay {
+        font-size: 1em !important;
     }
 
 }

@@ -143,6 +143,7 @@ header #nav-bar a:hover {
       -ms-flex-align: center;
           align-items: center;
   max-width: 100%;
+  margin-bottom: 1em;
 }
 
 #accueil #nameandavatar {
@@ -234,7 +235,7 @@ header #nav-bar a:hover {
           flex-direction: column;
   padding: 96px;
   min-height: 15em;
-  background-color: #e9e5e5;
+  background-color: white;
   color: #131381;
 }
 
@@ -313,7 +314,7 @@ header #nav-bar a:hover {
           align-items: center;
   padding: 96px;
   min-height: 15em;
-  background-color: #e9e5e5;
+  background-color: white;
   color: #131381;
 }
 
@@ -366,6 +367,9 @@ footer a:hover {
   #nav-bar {
     display: none;
   }
+  #accueil {
+    margin-bottom: 0;
+  }
   #avatar {
     height: 40% !important;
   }
@@ -386,6 +390,9 @@ footer a:hover {
   .img-card {
     width: 90% !important;
     height: 100%;
+  }
+  #overlay {
+    font-size: 1em !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
