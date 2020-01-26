@@ -57,7 +57,7 @@ body #navname {
   color: white !important;
 }
 
-body #overlay {
+body .overlay {
   opacity: 1;
   position: absolute;
   top: 50%;
@@ -451,7 +451,7 @@ footer a:hover {
     width: 90% !important;
     height: 100%;
   }
-  #overlay {
+  .overlay {
     font-size: 1em !important;
   }
 }
