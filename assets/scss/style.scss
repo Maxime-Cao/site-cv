@@ -64,6 +64,18 @@ body {
     }
 }
 
+@keyframes test2 {
+    0% {
+        transform: translateY(-1000px);
+        color: rgb(19, 19, 129);
+    }
+
+    100% {
+        transform: translateY(0);
+        color: white;
+    }
+}
+
 header {
     display: flex;
     align-items: center;
@@ -74,6 +86,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 999;
+    animation: test2 4s;
 
     h1 {
         margin-left: 1em;
@@ -132,9 +145,23 @@ header {
         font-size: 3em;
     }
 
+    @keyframes test {
+        0% {
+            opacity: 0;
+            transform: translateX(-1000px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
     #my_name {
         text-align: center;
         line-height: 3.5em;
+        animation-name: test;
+        animation-duration: 2s;
 
         #follow-me img:hover {
             filter: invert(50%);

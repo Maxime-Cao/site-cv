@@ -70,6 +70,32 @@ body #overlay {
   color: white;
 }
 
+@-webkit-keyframes test2 {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    color: #131381;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    color: white;
+  }
+}
+
+@keyframes test2 {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    color: #131381;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    color: white;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,6 +113,8 @@ header {
   position: fixed;
   top: 0;
   z-index: 999;
+  -webkit-animation: test2 4s;
+          animation: test2 4s;
 }
 
 header h1 {
@@ -156,9 +184,39 @@ header #nav-bar a:hover {
   font-size: 3em;
 }
 
+@-webkit-keyframes test {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes test {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 #accueil #my_name {
   text-align: center;
   line-height: 3.5em;
+  -webkit-animation-name: test;
+          animation-name: test;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 #accueil #my_name #follow-me img:hover {
