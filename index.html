@@ -1,146 +1,228 @@
 <!DOCTYPE html>
 
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Portfolio de Maxime Cao - Développeur vivant en Belgique à Liège."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo&display=swap"
+      rel="stylesheet"
+    />
+    <title>Maxime Cao - Développeur</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Portfolio de Maxime Cao - Développeur vivant en Belgique à Liège.">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
-  <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
-  <title>Maxime Cao - Développeur</title>
-</head>
+  <body>
+    <header id="header">
+      <h1><a href="#" class="active" id="navname">Maxime Cao</a></h1>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#apropos">A propos</a></li>
+          <li><a href="#competences">Competences</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
+    <section id="accueil">
+      <div id="my_name">
+        <p>
+          <span id="me">Maxime Cao</span><br /><span id="me2">Développeur</span>
+        </p>
+        <button type="button" id="button-cv">
+          <a
+            href="https://drive.google.com/file/d/1sGLicb02tiSaE_a_CjmT_RxNvqk9WGhu/view?usp=sharing"
+            target="_blank"
+            download
+            >Mon CV en PDF</a
+          >
+        </button>
 
-  <header id="header">
-    <h1><a href="#" class='active' id="navname">Maxime Cao</a></h1>
-    <nav id="nav-bar">
-      <ul>
-        <li><a href="#apropos">A propos</a></li>
-        <li><a href="#competences">Competences</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <section id="accueil">
-
-    <div id="my_name">
-      <p><span id="me">Maxime Cao</span><br><span id="me2">Développeur</span></p>
-      <button type="button" id="button-cv"><a
-          href="https://drive.google.com/file/d/108VzUhjbikhsVETKBOe78RqYmLfAmDSV/view?usp=sharing" target="_blank"
-          download>Mon CV en PDF</a> </button>
-
-      <div id="follow-me">
-        <a href="https://www.linkedin.com/in/maxime-cao/" target="_blank" id="linktolinkedin" title="Mon linkedin"><img
-            src="https://img.icons8.com/ios-glyphs/48/000000/linkedin-circled.png" alt="Icône linkedin"></a>
-        <a href="https://github.com/Maxime-Cao" target="_blank" id="linktogithub" title="Mon github"><img
-            src="https://img.icons8.com/material-sharp/48/000000/github.png" alt="icône github"></a>
+        <div id="follow-me">
+          <a
+            href="https://www.linkedin.com/in/maxime-cao/"
+            target="_blank"
+            id="linktolinkedin"
+            title="Mon linkedin"
+            ><img
+              src="https://img.icons8.com/ios-glyphs/48/000000/linkedin-circled.png"
+              alt="Icône linkedin"
+          /></a>
+          <a
+            href="https://github.com/Maxime-Cao"
+            target="_blank"
+            id="linktogithub"
+            title="Mon github"
+            ><img
+              src="https://img.icons8.com/material-sharp/48/000000/github.png"
+              alt="icône github"
+          /></a>
+        </div>
       </div>
+    </section>
 
+    <section id="apropos" class="section">
+      <h2 class="reveal">A propos de moi</h2>
 
-    </div>
+      <h3 class="reveal">Ce qui m'a donné envie d'apprendre à coder?</h3>
+      <p class="reveal">
+        Depuis toujours, je suis très intéressé par tout ce qui se rapporte à
+        l'informatique, aux nouvelles technologies. Après avoir été diplômé en
+        bureautique et eu quelques expériences dans ce domaine, j'ai décidé
+        d'opter pour une autre branche de l'informatique. Le 13 août 2019, j'ai
+        eu la chance d'intégrer une formation de développeur web chez
+        <span id="becode"
+          ><a
+            href="https://www.becode.org/"
+            title="Site web de Becode"
+            target="_blank"
+            >Becode</a
+          ></span
+        >
+        à Liège.
+      </p>
 
+      <h3 class="reveal">Et après Becode?</h3>
 
-  </section>
+      <p class="reveal">
+        Après ma formation en développement web et un stage en entreprise, j'ai
+        opté pour un bachelier en informatique de gestion à l'HELMo Campus
+        Guillemins. En un an, ces études m'ont permis d'accroître mes
+        compétences en développement web, mais aussi, d'apprendre de nouveaux
+        concepts comme l'orienté objet avec le langage Java, les bases de
+        données relationnelles et leur gestion (SQL), l'analyse des besoins d'un
+        client à l'aide de schémas ou autre outil (UML, MCD) et bien d'autres
+        choses.
+      </p>
 
-  <section id="apropos" class="section">
-    <h2 class="reveal">A propos de moi</h2>
+      <h3 class="reveal">Qu'en est-il de mes soft-skills?</h3>
 
-    <h3 class="reveal">Ce qui m'a donné envie d'apprendre à coder?</h3>
-    <p class="reveal">Depuis toujours, je suis très intéressé par tout ce qui se rapporte à l'informatique, aux
-      nouvelles technologies.
-      Après avoir été diplômé en bureautique et eu quelques expériences dans ce domaine, j'ai décidé d'opter pour une
-      autre branche de l'informatique. Le 13 août 2019, j'ai eu la chance d'intégrer une formation de développeur web
-      chez <span id="becode"><a href="https://www.becode.org/" title="Site web de Becode"
-          target="_blank">Becode</a></span> à
-      Liège.</p>
+      <p class="reveal">
+        J'ai pu également améliorer mes soft-skills telles que : le travail en
+        équipe (lors de nombreux projets de groupe), la gestion du temps (à
+        chaque projet, sa deadline), la gestion du stress et ma capacité à
+        communiquer avec les autres (lors des présentations d'un sujet de veille
+        tous les mois au reste des apprenants).
+      </p>
+    </section>
 
-    <h3 class="reveal">Et après Becode?</h3>
-
-    <p class="reveal">Après ma formation en développement web et un stage en entreprise, j'ai opté pour un bachelier en informatique de gestion à l'HELMo Campus Guillemins.
-    En un an, ces études m'ont permis d'accroître mes compétences en développement web, mais aussi, d'apprendre de nouveaux concepts comme l'orienté objet avec le langage Java, les bases de données relationnelles et leur gestion (SQL), l'analyse des besoins d'un client à l'aide de schémas ou autre outil (UML, MCD) et bien d'autres choses.</p>
-
-    <h3 class="reveal">Qu'en est-il de mes soft-skills?</h3>
-
-    <p class="reveal">J'ai pu également améliorer mes soft-skills telles que : le travail en
-      équipe (lors de nombreux projets de groupe), la gestion du temps (à chaque projet, sa deadline), la gestion du
-      stress et ma capacité à communiquer avec les autres (lors des présentations d'un sujet de veille tous les mois au
-      reste des apprenants).</p>
-
-  </section>
-
-  <section id="competences" class="section">
-    <h2 class="reveal">Technologies utilisées</h2>
-    <div id="container-logo" class="reveal">
-      <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="html5">
-      <img src="https://img.icons8.com/color/96/000000/css3.png" alt="css3">
-      <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="javascript">
-      <img src="https://img.icons8.com/windows/96/000000/github.png" alt="github">
-      <img src="https://img.icons8.com/nolan/96/000000/react-native.png" alt="react">
-      <img src="https://img.icons8.com/offices/96/000000/php-logo.png" alt="php">
-      <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo--v1.png" alt="java">
-    </div>
-  </section>
-
-  <section id="portfolio" class="section">
-    <h2 class="reveal">Mes réalisations</h2>
-
-    <p id="hello" data-label="D'autres projets sont en cours de développement et d'autres ne sont pas en ligne"></p>
-
-    <div id="container-card">
-
-      <div class="card reveal">
-        <a href="https://thirsty-mayer-56608b.netlify.com" target="_blank"><img
-            src="./assets/images/Projet-react-pomodoro.png" alt="Projet react pomodoro" class="img-card"></a>
-
-        <div class="overlay">React</div>
+    <section id="competences" class="section">
+      <h2 class="reveal">Technologies utilisées</h2>
+      <div id="container-logo" class="reveal">
+        <img
+          src="https://img.icons8.com/color/96/000000/html-5.png"
+          alt="html5"
+        />
+        <img src="https://img.icons8.com/color/96/000000/css3.png" alt="css3" />
+        <img
+          src="https://img.icons8.com/color/96/000000/javascript.png"
+          alt="javascript"
+        />
+        <img
+          src="https://img.icons8.com/windows/96/000000/github.png"
+          alt="github"
+        />
+        <img
+          src="https://img.icons8.com/nolan/96/000000/react-native.png"
+          alt="react"
+        />
+        <img
+          src="https://img.icons8.com/offices/96/000000/php-logo.png"
+          alt="php"
+        />
+        <img
+          src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo--v1.png"
+          alt="java"
+        />
       </div>
+    </section>
 
-      <div class="card reveal">
-        <a href="https://maxime-cao.github.io/travel-agency/" target="_blank"><img
-            src="./assets/images/Projet-travel-agency.png" alt="Projet travel agency" class="img-card"></a>
+    <section id="portfolio" class="section">
+      <h2 class="reveal">Mes réalisations</h2>
 
-        <div class="overlay">HTML5 - CSS3</div>
+      <p
+        id="hello"
+        data-label="D'autres projets sont en cours de développement et d'autres ne sont pas en ligne"
+      ></p>
+
+      <div id="container-card">
+        <div class="card reveal">
+          <a href="https://thirsty-mayer-56608b.netlify.com" target="_blank"
+            ><img
+              src="./assets/images/Projet-react-pomodoro.png"
+              alt="Projet react pomodoro"
+              class="img-card"
+          /></a>
+
+          <div class="overlay">React</div>
+        </div>
+
+        <div class="card reveal">
+          <a href="https://maxime-cao.github.io/travel-agency/" target="_blank"
+            ><img
+              src="./assets/images/Projet-travel-agency.png"
+              alt="Projet travel agency"
+              class="img-card"
+          /></a>
+
+          <div class="overlay">HTML5 - CSS3</div>
+        </div>
+
+        <div class="card reveal">
+          <a href="https://maxime-cao.github.io/foodog" target="_blank"
+            ><img
+              src="./assets/images/Projet-foodog.png"
+              alt="Projet foodog"
+              class="img-card"
+          /></a>
+
+          <div class="overlay">HTML5 - CSS3 - Bootstrap</div>
+        </div>
       </div>
+    </section>
 
-      <div class="card reveal">
-        <a href="https://maxime-cao.github.io/foodog" target="_blank"><img src="./assets/images/Projet-foodog.png"
-            alt="Projet foodog" class="img-card"></a>
-
-        <div class="overlay">HTML5 - CSS3 - Bootstrap</div>
+    <section id="contact" class="section">
+      <h2 class="reveal">Informations complémentaires</h2>
+      <div id="contact-infos" class="reveal">
+        <img
+          src="https://img.icons8.com/carbon-copy/55/00000/important-mail.png"
+          alt="icône mail"
+        /><a href="mailto:info@maximecao.com" title="M'envoyer un mail"
+          >info@maximecao.com</a
+        >
+        <img
+          src="https://img.icons8.com/wired/40/000000/phone.png"
+          alt="icône téléphone"
+        /><a href="tel:+32493729188" title="M'appeler">+32 493 72 91 88</a>
+        <img
+          src="https://img.icons8.com/dotty/40/000000/dog-house.png"
+          alt="icône maison"
+        />Liège
+        <img
+          src="https://img.icons8.com/ios/50/000000/people-in-car-side-view.png"
+          alt="icône voiture"
+        />Permis B
       </div>
+    </section>
 
-    </div>
-
-  </section>
-
-  <section id="contact" class="section">
-    <h2 class="reveal">Informations complémentaires</h2>
-    <div id="contact-infos" class="reveal">
-      <img src="https://img.icons8.com/carbon-copy/55/00000/important-mail.png" alt="icône mail"><a
-        href="mailto:info@maximecao.com" title="M'envoyer un mail">info@maximecao.com</a>
-      <img src="https://img.icons8.com/wired/40/000000/phone.png" alt="icône téléphone"><a href="tel:+32493729188"
-        title="M'appeler">+32 493
-        72 91 88</a>
-      <img src="https://img.icons8.com/dotty/40/000000/dog-house.png" alt="icône maison">Liège
-      <img src="https://img.icons8.com/ios/50/000000/people-in-car-side-view.png" alt="icône voiture">Permis B
-    </div>
-
-  </section>
-
-  <!-- <footer>
+    <!-- <footer>
     <a href="https://icons8.com" target="_blank" id="icons8">Icônes</a>
   </footer> -->
 
-  <a href="#" id="button"><img src="assets/images/icons8-flèche-réduire-26.png" id="img-button" alt="arrow scroll"></a>
+    <a href="#" id="button"
+      ><img
+        src="assets/images/icons8-flèche-réduire-26.png"
+        id="img-button"
+        alt="arrow scroll"
+    /></a>
 
-  <script src="assets/js/script.js"></script>
-</body>
-
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
