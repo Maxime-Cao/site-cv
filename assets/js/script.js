@@ -29,9 +29,6 @@
                 document.querySelector('.active').setAttribute('class', ' ');
                 document.querySelector('a[href*=' + i + ']').setAttribute('class', 'active');
 
-                if (scrollPosition >= portfolio) {
-                    showLetters();
-                }
             } else if (scrollPosition <= heightAccueil) {
                 document.querySelector('a[href*=' + i + ']').setAttribute('class', ' ');
                 document.querySelector('#navname').setAttribute('class', 'active');
