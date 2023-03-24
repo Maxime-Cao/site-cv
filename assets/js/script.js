@@ -13,15 +13,12 @@
         var heightHeader = document.querySelector('#header').offsetHeight;
         var scrollPosition = (document.documentElement.scrollTop + heightHeader) || (document.body.scrollTop + heightHeader);
         var heightAccueil = document.querySelector('#accueil').offsetHeight;
-        var portfolio = document.querySelector("#portfolio").offsetTop;
 
         for (i in sections) {
 
             if (scrollPosition > heightHeader) {
                 document.querySelector("#button").style.opacity = "1";
-            }
-
-            if (scrollPosition == heightHeader) {
+            } else {
                 document.querySelector("#button").style.opacity = "0";
             }
 
@@ -31,7 +28,6 @@
 
             } else if (scrollPosition <= heightAccueil) {
                 document.querySelector('a[href*=' + i + ']').setAttribute('class', ' ');
-                document.querySelector('#navname').setAttribute('class', 'active');
             }
         }
     };
