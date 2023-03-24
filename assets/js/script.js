@@ -1,6 +1,8 @@
 (function () {
     'use strict';
 
+    const navElems = [document.getElementById("firstNavElem"),document.getElementById("secondNavElem"),document.getElementById("thirdNavElem"),document.getElementById("fourthNavElem")];
+
     const section1Position = document.getElementById("apropos").getBoundingClientRect().top + window.scrollY;
 
     const section2Position = document.getElementById("competences").getBoundingClientRect().top + window.scrollY;
@@ -14,51 +16,36 @@
     window.onscroll = function () {
         let scrollPosition = document.documentElement.scrollTop;
 
+        let scrollPositionWithHeader = scrollPosition + headerOffsetHeight;
+
         if(scrollPosition > 0) {
             document.querySelector("#button").style.opacity = "1";
         } else {
             document.querySelector("#button").style.opacity = "0";
         }
 
-        switch(scrollPosition + headerOffsetHeight) {
-            case section1Position: {
-                setSelectedSection(document.getElementById("firstNavElem"));
-                break;
-            }
-
-            case section2Position: {
-                setSelectedSection(document.getElementById("secondNavElem"));
-                break;
-            }
-
-            case section3Position: {
-                setSelectedSection(document.getElementById("thirdNavElem"));
-                break;
-            }
-
-            case section4Position: {
-                setSelectedSection(document.getElementById("fourthNavElem"));
-                break;
-            }
-            default: {
-                setSelectedSection(null);
-                break;
-            }
+        if(scrollPositionWithHeader >= section4Position) {
+            setSelectedSection(document.getElementById("fourthNavElem"));
+        } else if(scrollPositionWithHeader >= section3Position) {
+            setSelectedSection(document.getElementById("thirdNavElem"));
+        } else if(scrollPositionWithHeader >= section2Position) {
+            setSelectedSection(document.getElementById("secondNavElem"));
+        } else if(scrollPositionWithHeader >= section1Position) {
+            setSelectedSection(document.getElementById("firstNavElem"));
+        } else {
+            setSelectedSection(null);
         }
-
-
-
     };
 })();
 
-let setSelectedSection = (sectionToSelect) => {
-    if(sectionToSelect != null) {
-    sectionToSelect.classList.add("active");
+let setSelectedSection = (elemToSelect) => {
+    if(elemToSelect != null) {
+        elemToSelect.classList.add("active");
     }
 
-    document.querySelectorAll(".section").forEach(section => {
-        if(section != sectionToSelect) {
-            section.classList.remove("active");
+    navElems.forEach(elem => {
+        if(elem != elemToSelect) {
+            elem.classList.remove("active");
         }
     })
 }
