@@ -1,21 +1,15 @@
 (function () {
     'use strict';
 
-    const section1 = document.getElementById("apropos");
-    const section1Position = section1.getBoundingClientRect().top + window.scrollY;
+    const section1Position = document.getElementById("apropos").getBoundingClientRect().top + window.scrollY;
 
-    const section2 = document.getElementById("competences");
-    const section2Position = section2.getBoundingClientRect().top + window.scrollY;
+    const section2Position = document.getElementById("competences").getBoundingClientRect().top + window.scrollY;
 
+    const section3Position = document.getElementById("portfolio").getBoundingClientRect().top + window.scrollY;
 
-    const section3 = document.getElementById("portfolio");
-    const section3Position = section3.getBoundingClientRect().top + window.scrollY;
+    const section4Position = document.getElementById("contact").getBoundingClientRect().top + window.scrollY;
 
-    const section4 = document.getElementById("contact");
-    const section4Position = section4.getBoundingClientRect().top + window.scrollY;
-
-    const headerHeight = document.getElementById("header").offsetHeight;
-
+    const headerOffsetHeight = document.getElementById("header").offsetHeight;
 
     window.onscroll = function () {
         let scrollPosition = document.documentElement.scrollTop;
@@ -26,7 +20,7 @@
             document.querySelector("#button").style.opacity = "0";
         }
 
-        switch(scrollPosition + offsetHeight) {
+        switch(scrollPosition + headerOffsetHeight) {
             case section1Position: {
                 setSelectedSection(document.getElementById("firstNavElem"));
                 break;
@@ -58,7 +52,9 @@
 })();
 
 let setSelectedSection = (sectionToSelect) => {
+    if(sectionToSelect != null) {
     sectionToSelect.classList.add("active");
+    }
 
     document.querySelectorAll(".section").forEach(section => {
         if(section != sectionToSelect) {
