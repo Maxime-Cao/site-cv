@@ -21,7 +21,9 @@ body h3 {
 }
 
 body .active {
-  color: #9292dd !important;
+  color:rgba(40, 45, 153, 1);
+  background-color: white;
+  padding:1rem;
 }
 
 body #button {
