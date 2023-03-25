@@ -169,6 +169,8 @@ header #nav-bar a {
 
 header #nav-bar a:hover {
   color: rgba(40, 45, 153, 1) !important;
+  background-color: white;
+  padding: 1rem;
 }
 
 #accueil {
