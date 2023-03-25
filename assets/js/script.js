@@ -1,16 +1,16 @@
 const navElems = [document.getElementById("firstNavElem"),document.getElementById("secondNavElem"),document.getElementById("thirdNavElem"),document.getElementById("fourthNavElem")];
 
-const section1Position = document.getElementById("apropos").getBoundingClientRect().top + window.scrollY;
-
-const section2Position = document.getElementById("competences").getBoundingClientRect().top + window.scrollY;
-
-const section3Position = document.getElementById("portfolio").getBoundingClientRect().top + window.scrollY;
-
-const section4Position = document.getElementById("contact").getBoundingClientRect().top + window.scrollY;
-
-const headerOffsetHeight = document.getElementById("header").offsetHeight;
-
 window.onscroll = function () {
+    const section1Position = document.getElementById("apropos").getBoundingClientRect().top + window.scrollY;
+
+    const section2Position = document.getElementById("competences").getBoundingClientRect().top + window.scrollY;
+
+    const section3Position = document.getElementById("portfolio").getBoundingClientRect().top + window.scrollY;
+
+    const section4Position = document.getElementById("contact").getBoundingClientRect().top + window.scrollY;
+
+    const headerOffsetHeight = document.getElementById("header").offsetHeight;
+    
     let scrollPosition = document.documentElement.scrollTop;
 
     let scrollPositionWithHeader = scrollPosition + headerOffsetHeight;
