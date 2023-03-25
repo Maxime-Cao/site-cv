@@ -10,7 +10,7 @@ window.onscroll = function () {
     const section4Position = document.getElementById("contact").getBoundingClientRect().top + window.scrollY;
 
     const headerOffsetHeight = document.getElementById("header").offsetHeight;
-    
+
     let scrollPosition = document.documentElement.scrollTop;
 
     let scrollPositionWithHeader = scrollPosition + headerOffsetHeight;
@@ -21,7 +21,7 @@ window.onscroll = function () {
         document.querySelector("#button").style.opacity = "0";
     }
 
-    if(scrollPositionWithHeader >= section4Position) {
+    if(window.innerHeight + window.scrollY === document.body.offsetHeight) {
         setSelectedSection(document.getElementById("fourthNavElem"));
     } else if(scrollPositionWithHeader >= section3Position) {
         setSelectedSection(document.getElementById("thirdNavElem"));
