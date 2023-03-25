@@ -23,7 +23,6 @@ body h3 {
 body .active {
   color:rgba(40, 45, 153, 1) !important;
   background-color: white;
-  padding:1rem;
 }
 
 body #button {
@@ -165,12 +164,12 @@ header #nav-bar a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.1em;
+  padding: 1rem;
 }
 
 header #nav-bar a:hover {
   color: rgba(40, 45, 153, 1) !important;
   background-color: white;
-  padding: 1rem;
 }
 
 #accueil {
